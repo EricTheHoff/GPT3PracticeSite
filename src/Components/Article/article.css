@@ -1,0 +1,65 @@
+/* Parent div for article component. */
+.gpt3__blog-container_article {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-footer);
+}
+
+/* Div for the image container. */
+.gpt3__blog-container_article-image {
+    width: 100%;
+    height: 100%;
+    background: var(--color-footer);
+}
+
+/* Styling for the image on the article. */
+.gpt3__blog-container_article-image IMG {
+    width: 100%;
+    height: 100%;
+}
+
+/* Div for the title and and p tags on the article. */
+.gpt3__blog-container_article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 1rem 1.5rem;
+    height: 100%;
+}
+
+/* Styling for the date text. */
+.gpt3__blog-container_article-content p {
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 11.649px;
+    font-weight: 700;
+    line-height: 34.947px;
+}
+
+/* Styling for the article title. */
+.gpt3__blog-container_article-content h3 {
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 25.11px;
+    font-weight: 800;
+    line-height: 30.287px;
+
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+/* Styling for the final p tag. */
+.gpt3__blog-container_article-content p:last-child {
+    cursor: pointer;
+}
+
+/* Responsiveness for screens 550px and below. */
+@media screen and (max-width: 550px) {
+    .gpt3__blog-container_article-content h3 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}

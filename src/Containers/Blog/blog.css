@@ -1,0 +1,74 @@
+/* Parent div for the blog component. */
+.gpt3__blog {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Div for the header text on the blog component. */
+.gpt3__blog-heading {
+    width: 100%;
+    text-align: left;
+
+    margin-bottom: 5rem;
+}
+
+/* Styling for the h1 element in the heading div. */
+.gpt3__blog-heading h1 {
+    font-family: var(--font-family);
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 75px;
+    letter-spacing: -2.48px;
+}
+
+/* Div that contains both blog groups. */
+.gpt3__blog-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Container for the primary article. */
+.gpt3__blog-container_groupA {
+    flex: 0.75;
+    margin-right: 2rem;
+}
+
+/* Container for the rest of the articles. */
+.gpt3__blog-container_groupB {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+/* Responsiveness for screens 990px and below. */
+@media screen and (max-width: 990px) {
+    .gpt3__blog-container {
+        flex-direction: column;
+    }
+    .gpt3__blog-container_groupA {
+        margin: 2rem 0;
+    }
+    .gpt3__blog-container_groupA .gpt3__blog-container_article-image {
+        height: 48%;
+    }
+}
+
+/* Responsiveness for screens 700px and below. */
+@media screen and (max-width: 700px) {
+   .gpt3__blog-container_groupB {
+        grid-template-columns: repeat(1, 1fr)
+   }
+   .gpt3__blog-heading h1 {
+        font-size: 46px;
+        line-height: 52px;
+   }
+}
+
+/* Responsivenes for screens 550px and below. */
+@media screen and (max-width: 550px) {
+    .gpt3__blog-heading h1 {
+        font-size: 34px;
+        line-height: 42px;
+   }
+}
