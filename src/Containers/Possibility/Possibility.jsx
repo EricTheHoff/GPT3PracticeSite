@@ -19,7 +19,6 @@ const Possibility = () => {
                 </p>
                 <h4>Request Early Access to Get Started</h4>
             </div>
-            
         </div>
     )
 }

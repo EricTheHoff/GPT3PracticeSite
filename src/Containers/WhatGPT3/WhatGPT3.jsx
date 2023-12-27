@@ -41,7 +41,6 @@ const WhatGPT3 = () => {
                     As put impossible own apartments b'
                 />
             </div>
-            
         </div>
     )
 }
