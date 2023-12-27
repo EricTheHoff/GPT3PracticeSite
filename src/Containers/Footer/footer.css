@@ -1,0 +1,162 @@
+/* Parent div for the footer component. */
+.gpt3__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-footer);
+}
+
+/* Div for the element containing the header. */
+.gpt3__footer-heading {
+    width: 100%;
+    text-align: center;
+
+    margin-bottom: 3rem;
+}
+
+/* Styling for the h1 element in the heading. */
+.gpt3__footer-heading h1 {
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 75px;
+    letter-spacing: -2.48px;
+}
+
+/* Div for the container that has the button. */
+.gpt3__footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    border: 1px solid #FFF;
+    margin-bottom: 10rem;
+
+    cursor: pointer;
+}
+
+/* Styling for the p element within the button container. */
+.gpt3__footer-btn p {
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 18px;
+    word-spacing: 2px;
+    line-height: 21px;
+}
+
+/* Div for the container with all of the additional links. */
+.gpt3__footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    width: 100%;
+    text-align: left;
+}
+
+/* Styling for individual div's within the footer-links container. */
+.gpt3__footer-links div {
+    width: 250px;
+    margin: 1rem;
+}
+
+/* Div for the container with the 'GPT-3' image and address. */
+.gpt3__footer-links_logo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the 'GPT-3' image. */
+.gpt3__footer-links_logo img {
+    width: 118px;
+    height: 30px;
+
+    margin-bottom: 1rem;
+}
+
+/* Styling for the address below the image. */
+.gpt3__footer-links_logo p {
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* Styling for the link groups. */
+.gpt3__footer-links_div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+/* Styling for the h4 elements within the link groups. */
+.gpt3__footer-links_div h4 {
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 16px;
+
+    margin-bottom: 1rem;
+}
+
+/* Styling for the p elements within the link groups. */
+.gpt3__footer-links_div p {
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+/* Div for the element containing the copyright message. */
+.gpt3__footer-copyright {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* Styling for p element within the copyright container. */
+.gpt3__footer-copyright p {
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+}
+
+/* Responsiveness for screens 850px and below. */
+@media screen and (max-width: 850px) {
+    .gpt3__footer-heading h1 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+
+/* Responsiveness for screens 550px and below. */
+@media screen and (max-width: 550px) {
+    .gpt3__footer-heading h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .gpt3__footer-links div {
+        margin: 1rem 0;
+    }
+    .gpt3__footer-btn p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+/* Responsiveness for screens 450px and below. */
+@media screen and (max-width: 450px) {
+    .gpt3__footer-heading h1 {
+        font-size: 27px;
+        line-height: 38px;
+    }
+}
